@@ -20,9 +20,13 @@
         <div class="container">
             <h1 class="text-center">Taules multiplicar</h1>
             
-            <div class="row">
+            <?php
+
+            for ($i=1; $i<=10; $i++):
+                ?>
+             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                    <h2>Taula del 3</h2>
+                    <h2>Taula del <?= $i ?></h2>
                     <table class="table table-striped table-hover">
                         <tbody>
                             <tr>
@@ -68,6 +72,9 @@
                     </table>
                 </div>
             </div>
+            <?php
+             endfor;  // End for $i iteration
+            ?>
         </div>
 
         <!-- jQuery -->
